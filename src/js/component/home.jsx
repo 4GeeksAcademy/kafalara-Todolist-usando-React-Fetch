@@ -72,11 +72,14 @@ tareaKafalara();  // Actualizar la lista de tareas después de agregar una nueva
         headers: {
           "Content-Type": "application/json"
         }
+      })
+      .then((resp)=> {
+        console.log(resp);
+        if(resp.status==204){tareaKafalara()
 
-
-      }
-
-      )
+        }
+        
+      })
       
     };
 
